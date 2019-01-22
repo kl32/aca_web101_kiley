@@ -1,0 +1,137 @@
+h1 {
+    color: #4d4d4d;
+    margin: 5% auto;
+    width: 100%;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: .5px solid #e9dbff;
+    padding: 20px;
+}
+
+header {
+    margin: 0%;
+    background-color: #fff;
+    padding: 100px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #4d4d4d;
+    text-align: center;
+    padding: 12px 14px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    text-decoration: none;
+
+  }
+  
+  li a:hover {
+    border-bottom: 1px solid #e9dbff;
+  }
+  
+  .active {
+    color: #ffd7bf;
+  }
+
+body {
+    background-color: #f1f1f1;
+}
+
+main {
+    background-color: #fff;
+    width: 60%;
+    margin: 1% auto;
+    padding: 1% auto; 
+    font-family: 'Marriweather', serif;
+    letter-spacing: .5px;
+    line-height: 190%;
+}
+
+article {
+    background-color: #fff;
+    margin: 0% auto;
+    width: 80%;
+    font-size: 9px;
+    padding: 0px 0px 10px 0px;
+}
+
+article > h3{
+    font-size: 15px;
+    padding: 20px 0px 0px 0px;
+
+}
+
+small {
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 5px;
+    font-weight: 500;
+    background-color: #fff0f2;
+    text-transform: uppercase;
+}
+
+p > span {
+    color: #ffb78c;
+}
+
+p:hover:first-letter{ 
+    font-size: 150%;
+    color: #e9dbff;
+  }
+
+  footer {
+      background-color: #fff;
+      margin: 1% auto;
+      padding: 50px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 9px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: .5px;
+      line-height: 190%;
+  }
+
+  .nav {
+    background-color: #fff; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+img {
+    float: left;
+    margin: 25px 10px 5px 10px;
+    padding: 1% auto;
+    width: 25px;
+    border-radius: 100%;
+}
