@@ -1,0 +1,71 @@
+/* greeting
+calculator
+date and clock
+todo list
+background image */
+
+body {
+    background-image: url("mountain.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: .2px;
+    text-shadow: 1px 2px 5px #b7b7b7;
+}
+
+.calculator {
+    background-color: #dd9feb;
+    grid-area: calculator;
+    box-shadow: 1px 2px 5px #b7b7b7;
+}
+
+.notes {
+    background-color: #dd9fbb;
+    grid-area: notes;
+    box-shadow: 1px 2px 5px #b7b7b7;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.clock {
+    background-color: #dd9f8b;
+    grid-area: clock;
+    box-shadow: 1px 2px 5px #b7b7b7;
+}
+
+.container {
+    margin: 10%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "calculator"
+    "notes"
+    "clock";
+    grid-gap: 25px;
+}
+
+@media (min-width: 700px) {
+    .container {
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas: 
+    "calculator header notes"
+    "calculator header notes"
+    "clock header notes"
+    }
+     }
