@@ -52,12 +52,18 @@ ul {
     background-color: #fff;
 }
 
-.row {
+.row::after {
     content: "";
     display: table;
     clear: both;
 }
- 
+
+img {
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
 /* Small and up (Landscape Phones) */
 @media (min-width: 576px) {
 

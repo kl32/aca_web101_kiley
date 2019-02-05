@@ -1,0 +1,142 @@
+#container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    width: 20%;
+    margin-top: 1%;
+    background-color:#fff49f;
+    border: 1px solid #e1e1e1;
+    padding: 1%;
+    
+}
+
+.calculator div {
+    text-align: center;
+}
+
+.screen {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    background-color:	#ffeab5;
+}
+
+.one {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color:	#ffd9ab;
+    border-radius: 100%;
+}
+
+.two {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color:	#ffd9ab;
+    border-radius: 100%;
+}
+
+.three {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color:	#ffd9ab;
+    border-radius: 100%;
+}
+
+.plus {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    background-color:#ffbcb1;
+    border-radius: 100%;
+}
+
+.four {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-color:	#ffd9ab;
+    border-radius: 100%;
+}
+
+.five {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color:	#ffd9ab;
+    border-radius: 100%;
+}
+
+.six {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    background-color:	#ffd9ab;
+    border-radius: 100%;
+}
+
+.minus {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    background-color:#ffbcb1;
+    border-radius: 100%;
+}
+
+.seven {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-color:	#ffd9ab;
+    border-radius: 100%;
+}
+
+.eight {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background-color:	#ffd9ab;
+    border-radius: 100%;
+}
+
+.nine {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    background-color:	#ffd9ab;
+    border-radius: 100%;
+}
+
+.multiply {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    background-color:	#ffbcb1;
+    border-radius: 100%;
+}
+
+.clear {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    background-color:	#ffbcb1;
+    border-radius: 100%;
+}
+
+.zero {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    background-color:	#ffd9ab;
+    border-radius: 100%;
+}
+
+.divide {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    background-color:#ffbcb1;
+    border-radius: 100%;
+}
+
+.equals {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+    background-color: #ffbcb1;
+    border-radius: 100%;
+}

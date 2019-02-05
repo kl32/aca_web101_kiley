@@ -1,0 +1,100 @@
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "calc clock"
+        "notes notes";
+    grid-gap: 10px;
+    padding: 10px;
+    
+}
+
+.header {
+    grid-area: header;
+    padding: 1%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 1px 2px 4px #5e5e5e;
+}
+
+h1 {
+    
+}
+
+.calc {
+    grid-area: calc;
+    background-color: transparent;
+    box-shadow: 1px 2px 4px #5e5e5e;
+}
+
+.clock {
+    grid-area: clock;
+    background-color: #abcfe2;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 1px 2px 4px #5e5e5e;
+    opacity: .5;
+}
+
+.notes {
+    grid-area: notes; 
+
+}
+
+textarea {
+    width: 100%;
+    min-height: 50px;  
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    resize: none;
+    box-shadow: 1px 2px 4px #5e5e5e;
+  }
+
+
+
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+    body {
+        background-image: url(mtn.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: transparent;
+    }
+    .container {
+        display: grid;
+        grid-template-areas: 
+            "header header clock"
+            "calc notes notes";
+    }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+    body {
+        background-image: url(mtn.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: transparent;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+            "header header header"
+            "notes notes clock"
+            "notes notes calc";
+        background-color: transparent;
+    }
+}
