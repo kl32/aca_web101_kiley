@@ -1,0 +1,50 @@
+body {
+    margin: 0 auto; 
+}
+
+header {
+    width: 100%;
+    padding: 70px;
+    background-image: url("headerimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    background-color: #d9cbc0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px; 
+    text-align: center;
+}
+
+.section-1 {
+    display: flex;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+}
+
+.section-1 > div {
+    background-color: #f4dbdb;
+    padding: 10px;
+
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 992px) {
+
+}
