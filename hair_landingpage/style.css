@@ -4,10 +4,11 @@ body {
 
 header {
     width: 100%;
-    padding: 70px;
+    padding: 10px;
     background-image: url("headerimg.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 h1 {
@@ -15,36 +16,112 @@ h1 {
     font-size: 40px;
     color: #fff;
     text-align: center;
+    background-color: #f4dbdb;
 }
 
 nav {
     display: inline-block;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     background-color: #d9cbc0;
     font-family: 'Roboto', sans-serif;
-    font-size: 10px; 
+    font-size: 11px; 
     text-align: center;
 }
 
 .section-1 {
-    display: flex;
+    display: grid;
     grid-template-columns: auto auto;
     grid-gap: 5px;
-}
-
-.section-1 > div {
-    background-color: #f4dbdb;
+    align-content: center;
+    justify-content: center;
     padding: 10px;
 
 }
 
+.section-1 > div img{
+    border:1px solid #f4dbdb;
+    padding: 5px;
+    margin-left: 2px;
+    width: 100px;
+}
 
-@media (min-width: 768px) {
+.article1 img{
+    width: 80px;
+    float: left;
+    margin: 1%;
+}
 
+h2 {
+    background-color:#b3cacc;
+    color: #fff;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    width: 51px;
+    padding: 5px;
+    margin: 1%;
+}
+
+.article1 {
+    border: 1px solid 	#b3cacc;
+    padding: 10px;
+    font-size: 11px;
+    font-family: 'PT Serif', serif;
+    text-align: justify;
+    margin: 1%;
+    clear: left;
+    overflow: auto;
+}
+
+.article2 {
+    background-color: #b3cacc;
+    padding: 10px;
+    font-size: 11px;
+    font-family: 'PT Serif', serif;
+    color: #fff;
+    margin: 1%;
+}
+
+.article3 {
+    background-color: #b3cacc;
+    padding: 10px;
+    font-size: 11px;
+    font-family: 'PT Serif', serif;
+    color: #fff;
+    margin: 1%;
+}
+
+footer {
+    width: 100%;
+    padding: 70px 0px;
+    background-color: #d9cbc0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: center;
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+    section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            'article1 article1 article2'
+            'article1 article1 article2'
+            'article1 article1 article3'
+            'article1 article1 article3'
+    }
 
+    .article1 {
+        grid-area: article1;
+        max-width: 400px;
+    }
+
+    .article2 {
+        grid-area: article2;
+    }
+
+    .article3 {
+        grid-area: article3;
+    }
 }

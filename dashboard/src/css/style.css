@@ -5,7 +5,7 @@ todo list
 background image */
 
 body {
-    background-image: url("mountain.jpeg");
+    background-image: url("../img/mountain.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
