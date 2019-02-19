@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0 auto;
+    background-image: url("../images/bg.jpeg");
+    background-size: stretch;
+    background-repeat: no-repeat;
+    background-color: #1f2226;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #4d4d4d;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+h1 {
+    border: 1px solid #b3bfd5;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1%;
+}
+
+.block {
+    color: #4d4d4d;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a{
+    color: #4d4d4d;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding-bottom: 5px;
+
+}
+
+a:after {
+    content: "";
+	position: absolute;
+	height: 2px;
+	background-color: #1f2226;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+a:visited{
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+a:active{
+    color: #b3bfd5;
+}
+
+a:hover{
+    color: #b3bfd5;
+    padding-bottom: 5px;
+}
+
+a:hover:after {
+	width: 100%;
+}
+
+article {
+    margin: 0 auto;
+    padding: 20px;
+    border-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    width: 80%;
+    text-shadow: 1px 1px 3px #4d4d4d;
+    text-transform: uppercase;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+footer {
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #1f2226;
+    color: #b3bfd5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    letter-spacing: .4px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input[type=text] {
+    width: 70%;
+    padding: 2%;
+    margin: 1%;
+    box-sizing: border-box;
+  }
+
+textarea {
+    width: 70%;
+    height: 80px;
+    padding: 2%;
+    box-sizing: border-box;
+    resize: none;
+  }
+
+@media (min-width: 768px) {
+    background-size: cover;
+}
