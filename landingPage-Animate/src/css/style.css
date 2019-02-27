@@ -1,0 +1,35 @@
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: fill;  
+   background-color: #ffb993;  
+}
+
+nav {
+   margin-top: 20px;
+   display: inline-block;
+   text-align: center;
+}
+
+header {
+   display: block;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   font-family: sans-serif;
+   font-weight: 500;
+   text-align: center;
+   background-color: #fff;
+}
+
+h1 {
+   font-family: 'Chewy', cursive;
+   font-size: 20px;
+   letter-spacing: 1px;
+   line-height: 190%;
+}
+
