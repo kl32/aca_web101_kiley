@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+#container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+#red {
+      background-color: red;
+    }
+
+#orange {
+    background-color: orange;
+}
+
+#lightyellow {
+    background-color: lightgoldenrodyellow;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#lightgreen {
+    background-color: lightgreen;
+}
+
+#green {
+    background-color: green;
+}
+
+#lightblue {
+    background-color: lightblue;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#lightpurple {
+    background-color: plum;
+}
+
+#purple {
+    background-color: purple
+}
+
+#pink {
+    background-color: pink;
+}
+
+#grey {
+    background-color: grey;
+}
+  .square {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px; 
+    transition-property: width, height;
+    transition-duration: 2s;
+  }
+  
+  #container .square:nth-child(odd):hover {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #container .square:nth-child(even):hover {
+    width: 25px;
+    height: 25px;
+  }
