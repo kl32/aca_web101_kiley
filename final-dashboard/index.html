@@ -18,12 +18,15 @@
 
     <div class="geo">
         
-            <button onclick="getLocation()">Get Location!</button>
-            <p id="myLoc"></p>
+        <button onclick="getLocation()">Get Location!</button>
+        <p id="myLoc"></p>
 
     </div>
     <div class="notes">notes</div>
-    <div class="flower">flower click</div>
+    <div class="flower">
+        <img src="../flowerClick/flower.gif" onclick="flowerClick(1)">
+        flowers: <span id="flowers">0</span>
+    </div>
  
     </div>
 
@@ -31,5 +34,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="dash.js"></script>
     <script src="../geolocation/geo.js"></script>
+    <script src="../flowerClick/flower.js"></script>
 
 </body>
