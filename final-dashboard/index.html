@@ -16,7 +16,12 @@
         <h3>short message here.</h3>
     </header>
 
-    <div class="geo">locate</div>
+    <div class="geo">
+        
+            <button onclick="getLocation()">Get Location!</button>
+            <p id="myLoc"></p>
+
+    </div>
     <div class="notes">notes</div>
     <div class="flower">flower click</div>
  
@@ -25,5 +30,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="dash.js"></script>
+    <script src="../geolocation/geo.js"></script>
 
 </body>

@@ -38,6 +38,20 @@ header {
     border: 1px solid blue;
 }
 
+button {
+    background-color: #c0e6ff;
+    border: 1px solid #c0e6ff;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    transition-duration: 0.4s;
+ }
+ 
+ button:hover {
+     background-color: #fff;
+     color: #c0e6ff;
+ } 
+
 .notes {
     grid-area: notes;
 
