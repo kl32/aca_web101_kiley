@@ -22,7 +22,19 @@
         <p id="myLoc"></p>
 
     </div>
-    <div class="notes">notes</div>
+    <div class="notes">
+        <div id="list_section">
+            <h1 id="header">To-do list</h1>
+            <ul>
+                <li class="item">Buy movie tickets</li>
+            </ul>
+        <div id="newItemButton"><button href="#">new item</button></div>
+            <form id="newItemForm">
+                <input type="text" id="itemField" placeholder="Item" />
+                <input type="submit" id="add" value="add" />
+            </form>
+        </div>
+    </div>
     <div class="flower">
         <img src="../flowerClick/flower.gif" onclick="flowerClick(1)">
         flowers: <span id="flowers">0</span>
@@ -35,5 +47,6 @@
     <script src="dash.js"></script>
     <script src="../geolocation/geo.js"></script>
     <script src="../flowerClick/flower.js"></script>
+    <script src="../jQuery-TodoApp/todo.js"></script>
 
 </body>
