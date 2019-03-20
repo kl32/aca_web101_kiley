@@ -5,42 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../my portfolio/reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../jQuery-TodoApp/style.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Roboto:400,500" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-
     <header>
         <div class="greeting"></div>
-        <h3>short message here.</h3>
-    </header>
-
-    <div class="geo">
+        <div class="mini-nav">
+            <div class="circle-widget">
+                <canvas class="icon" width="25" height="25"></canvas>
+            </div>
         
-        <button onclick="getLocation()">Get Location!</button>
-        <p id="myLoc"></p>
+            <div class="circle-widget">
+                <div class="temperature">
+                    <div class="degree-section">
+                    <h2 class="temperature-degree"></h2>
+                    <span>&#176;f</span>
+                    </div>
+                </div> 
+            </div>
+            <div class="circle-widget">
+                <div class="temperature-description"></div>
+            </div>
+        </div> 
+    </header>
+ 
 
-    </div>
-    <div class="notes">
-        <div id="list_section">
-            <h1 id="header">To-do list</h1>
-            <ul>
-                <li class="item">Buy movie tickets</li>
-            </ul>
-        <div id="newItemButton"><button href="#">new item</button></div>
-            <form id="newItemForm">
-                <input type="text" id="itemField" placeholder="Item" />
-                <input type="submit" id="add" value="add" />
-            </form>
+    <div class="card">
+        <div class="geo">
+            <button onclick="getLocation()">Get Location!</button>
+            <p id="myLoc"></p>
         </div>
     </div>
-    <div class="flower">
-        <img src="../flowerClick/flower.gif" onclick="flowerClick(1)">
-        flowers: <span id="flowers">0</span>
+
+    <div class="card">
+        <div class="notes">
+            <div id="list_section">
+                <h1>To-do list</h1>
+                <ul>
+                    <li class="item"></li>
+                </ul>
+  
+                <div id="newItemButton"><button href="#">new item</button></div>
+  
+                <form id="newItemForm">
+                <input type="text" id="itemField" placeholder="Item" />
+                <input type="submit" id="add" value="add" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="flower">
+            <img src="flower1.png" onclick="flowerClick(1)"><br>
+            flowers: <span id="flowers">0</span>
+        </div>
     </div>
  
     </div>
+    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -48,5 +74,7 @@
     <script src="../geolocation/geo.js"></script>
     <script src="../flowerClick/flower.js"></script>
     <script src="../jQuery-TodoApp/todo.js"></script>
+    <script src="../weather-dash/skycons.js"></script>
+    <script src="../weather-dash/weather-app.js"></script>
 
 </body>

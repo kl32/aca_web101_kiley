@@ -12,3 +12,7 @@ button:hover {
     color: #fff;
 }
 
+#myLoc p{
+    margin: 2%;
+    padding: 5px;
+}

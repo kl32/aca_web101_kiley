@@ -1,0 +1,56 @@
+#list_section {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 2%;
+}
+
+li:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+h1 {
+    padding-bottom: 10px;
+}
+
+p {
+    display: inline-block;
+}
+
+#newItemButton {
+    display: none;
+}
+
+input[type='text'] {
+    background-color: #fff;
+    border: 1px solid #c0e6ff;
+    padding: 5px;
+    color: #c0e6ff;
+    text-align: center;
+}
+
+input[type='text']:focus {
+    background-color: #fff;
+    color: #c0e6ff;
+}
+
+input[type='submit'] {
+    background-color: #fff;
+    border: 1px solid #c0e6ff;
+    padding: 5px;
+    color: #c0e6ff;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+input[type='submit']:hover {
+    background-color: #c0e6ff;
+    color: #fff;
+}
