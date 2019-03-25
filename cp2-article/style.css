@@ -22,7 +22,6 @@ h1 {
     color: #fff;
     text-align: center;
     margin: auto;
-    animation: pulse 2s ease-in-out;
 }
 
 nav {
@@ -42,10 +41,6 @@ ul {
 
 li {
     color: #fff;
-}
-
-a:hover {
-    animation: bounce 2s ease-in-out;
 }
 
 a:active {
@@ -109,8 +104,6 @@ p {
 }
 
 
-
-
 @media (max-width: 576px) {
     body {
         background-color: #f7f5f6;
@@ -125,14 +118,6 @@ p {
     }
 
     main {
-        color: #4d4d4d;
-    }
-
-    a:active {
-        color: #4d4d4d;
-    }
-    
-    a:visited {
         color: #4d4d4d;
     }
  }
