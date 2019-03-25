@@ -59,21 +59,21 @@
 #grey {
     background-color: grey;
 }
-  .square {
+
+.square {
     width: 50px;
     height: 50px;
     padding: 5px;
     margin: 5px; 
-    transition-property: width, height;
-    transition-duration: 2s;
   }
   
-  #container .square:nth-child(odd):hover {
-    width: 100px;
-    height: 100px;
-  }
+#container .square:nth-child(odd):hover {
+    transform: scale(2) rotate(360deg) translateX(100px);
+    transition: all 1.5s linear;
+}
   
-  #container .square:nth-child(even):hover {
-    width: 25px;
-    height: 25px;
+  
+#container .square:nth-child(even):hover {
+    transform: scale(.5) rotate(-360deg) translateX(100px);
+    transition: all 1.5s linear;
   }
